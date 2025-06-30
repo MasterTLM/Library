@@ -1,7 +1,7 @@
 <?php
 
 try {
-	$db = new PDO('mysql:host=localhost;dbname=library', 'root', '');
+	$db = new PDO('mysql:host=localhost;dbname=library', 'root', ''); // http://nlcs.localhost/
 	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
 	$error_message = 'Không thể kết nối đến CSDL';
