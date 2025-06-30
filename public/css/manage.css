@@ -1,0 +1,244 @@
+.title-comm {
+  color: #fff;
+  font-size: 18px;
+  position: relative;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+h3.title-comm:before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-top: 0;
+  border-top: 2px solid #d0d2d3;
+  z-index: 1;
+  display: block;
+}
+
+.title-comm .title-holder {
+  min-width: 350px;
+  height: 45px;
+  background-color: #4294DE;
+  height: auto;
+  line-height: 45px;
+  padding: 0px 50px;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  display: inline-block;
+  min-width: 280px;
+}
+
+.title-holder:before {
+  content: "";
+  position: absolute;
+  right: -14px;
+  border-width: 0px;
+  bottom: 0px;
+  border-style: solid;
+  border-color: #4294DE transparent;
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 23px solid transparent;
+  border-bottom: 22px solid transparent;
+  border-left: 15px solid #4294DE;
+}
+
+.title-holder:after {
+  content: "";
+  position: absolute;
+  left: -14px;
+  border-width: 0px;
+  bottom: 0px;
+  border-style: solid;
+  border-color: #4294DE transparent;
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 23px solid transparent;
+  border-bottom: 22px solid transparent;
+  border-right: 15px solid #4294DE;
+}
+
+.btn-modal{
+    padding: 15px 0;
+}
+#btn-modal{
+    position: relative;
+    left: 10%;
+}
+
+#btn-modal-book{
+    position: relative;
+    left: 17%;
+}
+
+.container-m{
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+.title-book{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.quantity{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    font-family: sans-serif;
+    font-weight: 100;
+    overflow: hidden;
+    box-shadow: 0 0 20px #0000001a;
+}
+
+
+
+th, td{
+    padding: 15px;
+    background-color: #ffffff33;
+}
+
+th{
+    background-color: rgb(88, 88, 88);
+    color: white;
+}
+
+thead th {
+    background-color: #55608f;
+}
+
+tbody tr:hover {
+    background-color: rgb(187, 187, 187);
+}
+
+tbody td {
+    position: relative;
+}
+
+tbody td:hover::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(187, 187, 187);
+    left: 0;
+    right: 0;
+    top: -9999px;
+    bottom: -9999px;
+    z-index: -1;
+}
+
+img{
+    width: 50px; 
+    height: 50px;
+}
+
+button {
+    color: #090909;
+    padding: 0.3em 1em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    /* box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff; */
+}
+   
+button:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+                inset -4px -4px 12px #ffffff;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal_user {
+    margin: 20px 0;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 9999;
+    min-width: 500px;
+}
+
+.modal_ajax{
+    display: flex;
+    justify-content: center;
+}
+
+.modal_list_book {
+    margin: 20px 0;
+    background-color: white;
+    padding: 40px 80px;
+    border-radius: 5px;
+    z-index: 9999;
+    width: 500px;
+}
+
+.pagination{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.breadcrumb-title{
+    font-size: 25px;
+    margin-top: 13px;
+    font-weight: bold;
+}
+
+.breadcrumb{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.disabled-ul {
+    display: none;
+}
+
+
+.no-result{
+    text-align: center;
+    width: fit-content;
+    background: white;
+    border-radius: 20px;
+    padding: 50px;
+    margin: auto;
+}
+
+#hideModal{
+    width: -webkit-fill-available;
+}
+
+@media screen and (max-width: 700px){
+    body{
+        display: table-footer-group;
+    }
+}
